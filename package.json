@@ -1,10 +1,13 @@
 {
+  "homepage": "https://github.com/Coderholyy/slstudycentre.github.io",
   "name": "SLSC",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --watch --inline --compress --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "webpack serve --inline --compress --mode development",
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.js",
     "node": "node ./script.dev.js",
     "prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
@@ -41,6 +44,7 @@
     "eslint": "^7.30.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-watch": "^7.0.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^4.5.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.10.0",

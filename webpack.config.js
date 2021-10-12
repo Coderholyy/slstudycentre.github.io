@@ -47,7 +47,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Development',
-      template: 'index.html'
+      template: './dist/index.html'
     })
   ],
   mode: 'development',
