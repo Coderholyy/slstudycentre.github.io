@@ -5,8 +5,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "start": "webpack serve --inline --compress --mode development",
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.js",
     "node": "node ./script.dev.js",
