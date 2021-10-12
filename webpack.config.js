@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// var webpack = require('webpack');
 const path = require('path');
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
@@ -36,21 +37,21 @@ module.exports = {
     ]
   },
   output: {
-    filename: isDevelopment? 'slsc.bundle.js' : 'slsc.bundle.[hash].js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    filename: 'slsc.bundle.js',
+    path: path.join(__dirname, 'dist'),
+    // publicPath: '/'
   },
-  plugins: [
-    new CleanWebpackPlugin({
-      //we don't want to remove the index.html file after the incremental build triggered by watch
-      cleanStaleWebpackAssets: false
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      filename: path.resolve(__dirname, 'index.html'),
-      template: 'index-template.html'
-    })
-  ],
+  // plugins: [
+    // new CleanWebpackPlugin({
+    //   //we don't want to remove the index.html file after the incremental build triggered by watch
+    //   cleanStaleWebpackAssets: false
+    // }),
+    // new HtmlWebpackPlugin({
+    //   inject: true,
+    //   filename: path.resolve(__dirname, 'index.html'),
+    //   template: 'index-template.html'
+    // })
+  // ],
   mode: 'development',
   devtool: 'source-map',
   watchOptions: {
