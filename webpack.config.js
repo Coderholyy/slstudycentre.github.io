@@ -46,8 +46,9 @@ module.exports = {
       cleanStaleWebpackAssets: false
     }),
     new HtmlWebpackPlugin({
-      title: 'Development',
-      template: './dist/index.html'
+      inject: true,
+      filename: path.resolve(__dirname, 'index.html'),
+      template: 'index-template.html'
     })
   ],
   mode: 'development',
