@@ -5,12 +5,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "client": "npm run prod && npm run dev",
+    "dev": "cross-env NODE_ENV=development webpack serve --inline --compress --mode development",
+    "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
+    "bundle": "webpack --mode production --env production --progress",
     "start": "webpack serve --inline --compress --mode development",
-    "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.js",
     "node": "node ./script.dev.js",
-    "prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "watch": "webpack --watch",
-    "build": "webpack",
     "lint": "eslint ./src/index.js",
     "lint:fix": "eslint --fix ./src/index.js"
   },

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-// import video from '../../videos/EarthDIGI.mp4';
+import video from '../../videos/video-1.mp4';
 
 
 const Body = styled.div`
@@ -21,11 +21,17 @@ const Video = styled.video`
   object-fit: cover;
 `;
 
-const BodyText = styled.h1`
+const TextWrapper = styled.div`
   position: absolute;
-  top: 35%;
-  left: 30%;
+  left: 35%;
+  top: 20%;
+`;
+
+const BodyText = styled.h1`
   font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BodySubText = styled.h4`
@@ -39,15 +45,17 @@ const Home = () => {
   return (
     <>
       <Body>
-        {/* <Video
+        <Video
           autoPlay
           loop
           muted
           src = {video}
           type = "video/mp4"
-        /> */}
-        <BodyText>Easy & Efficient Learning</BodyText>
-        <BodySubText>SignUp to learn more content</BodySubText>
+        />
+        <TextWrapper>
+          <BodyText>Easy & Efficient Learning</BodyText>
+          <BodySubText>SignUp to learn more content</BodySubText>
+        </TextWrapper>        
       </Body>
       <h2>About Us</h2>
       <h2>Stay Tuned for Online Video Tutorials</h2>

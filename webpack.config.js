@@ -1,6 +1,4 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// var webpack = require('webpack');
 const path = require('path');
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
@@ -41,18 +39,7 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     // publicPath: '/'
   },
-  // plugins: [
-    // new CleanWebpackPlugin({
-    //   //we don't want to remove the index.html file after the incremental build triggered by watch
-    //   cleanStaleWebpackAssets: false
-    // }),
-    // new HtmlWebpackPlugin({
-    //   inject: true,
-    //   filename: path.resolve(__dirname, 'index.html'),
-    //   template: 'index-template.html'
-    // })
-  // ],
-  mode: 'development',
+  mode: isDevelopment ? 'development' : 'production',
   devtool: 'source-map',
   watchOptions: {
     poll: 1000,
