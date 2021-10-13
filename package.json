@@ -12,7 +12,8 @@
     "start": "webpack serve --inline --compress --mode development",
     "node": "node ./script.dev.js",
     "lint": "eslint ./src/index.js",
-    "lint:fix": "eslint --fix ./src/index.js"
+    "lint:fix": "eslint --fix ./src/index.js",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
