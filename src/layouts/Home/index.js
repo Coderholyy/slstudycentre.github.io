@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import video from '../../videos/EarthDIGI.mp4';
+// import video from '../../videos/EarthDIGI.mp4';
 
 
 const Body = styled.div`
@@ -39,13 +39,13 @@ const Home = () => {
   return (
     <>
       <Body>
-        <Video
+        {/* <Video
           autoPlay
           loop
           muted
           src = {video}
           type = "video/mp4"
-        />
+        /> */}
         <BodyText>Easy & Efficient Learning</BodyText>
         <BodySubText>SignUp to learn more content</BodySubText>
       </Body>
