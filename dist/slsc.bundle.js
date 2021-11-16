@@ -47,7 +47,7 @@
   color: white;
   flex-direction: column;
   position: relative;
-  padding-top: 68px;
+  // padding-top: 68px;
 `,xt=ut.video`
   height: 100%;
   width: 100%;
@@ -66,7 +66,7 @@
   top: 47%;
   left: 37%;
   font-size: 1.5em;
-`,Nt=()=>e.createElement(e.Fragment,null,e.createElement(St,null,e.createElement(xt,{autoPlay:!0,loop:!0,muted:!0,src:Et,type:"video/mp4"}),e.createElement(Ct,null,e.createElement(_t,null,"Easy & Efficient Learning"),e.createElement(Pt,null,"SignUp to learn more content"))),e.createElement("h2",null,"About Us"),e.createElement("h2",null,"Stay Tuned for Online Video Tutorials")),Tt=n.p+"2e0efe4335ff93ede139889f977b7cdb.jpg",Lt=ut.img`
+`,Nt=()=>e.createElement(e.Fragment,null,e.createElement(St,null,e.createElement(xt,{autoPlay:!0,loop:!0,muted:!0,src:Et,type:"video/mp4"}),e.createElement(Ct,null,e.createElement(_t,null,"Easy & Efficient Learning"),e.createElement(Pt,null,"SignUp to learn more content"))),e.createElement("h2",null,"About Us"),e.createElement("h2",null,"Stay Tuned for Online Video Tutorials"),e.createElement("lottie-player",{src:"https://assets5.lottiefiles.com/packages/lf20_rz0hyab1.json",background:"transparent",speed:"1",style:{width:100,height:100},loop:!0,autoplay:!0})),Tt=n.p+"2e0efe4335ff93ede139889f977b7cdb.jpg",Lt=ut.img`
   margin-top: 10em;
   display: block;
   margin-left: auto;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import video from '../../videos/video-1.mp4';
-
+import { NotFoundComponent } from '../../lotteComponents/NotFound';
 
 const Body = styled.div`
   overflow: inherit;
@@ -12,7 +12,7 @@ const Body = styled.div`
   color: white;
   flex-direction: column;
   position: relative;
-  padding-top: 68px;
+  // padding-top: 68px;
 `;
 
 const Video = styled.video`
@@ -59,7 +59,8 @@ const Home = () => {
       </Body>
       <h2>About Us</h2>
       <h2>Stay Tuned for Online Video Tutorials</h2>
-    </>
+      <NotFoundComponent />
+      </>
   );
 };
 
