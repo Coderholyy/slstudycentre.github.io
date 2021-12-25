@@ -38,7 +38,7 @@
   width: 100%;
   box-shadow: ${e=>e.extraClass?"0 2px 4px 0 rgba(0, 0, 0, 0.1)":""};
   justify-content: space-between;
-`,kt=({extraClass:t})=>e.createElement(wt,{extraClass:t},e.createElement(vt,null,e.createElement(yt,{src:gt}),e.createElement(bt,null,"SL STUDY CENTRE")),e.createElement(mt,null)),Et=n.p+"video/video-1.mp4",St=ut.div`
+`,kt=({extraClass:t})=>e.createElement(wt,{extraClass:t},e.createElement(vt,null,e.createElement(yt,{src:gt}),e.createElement(bt,null,"SL STUDY CENTRE")),e.createElement(mt,null)),Et=n.p+"video/video-1.mp4",St=()=>React.createElement("lottie-player",{src:"https://assets5.lottiefiles.com/packages/lf20_rz0hyab1.json",background:"transparent",speed:"1",style:{width:100,height:100},loop:!0,autoplay:!0}),xt=ut.div`
   overflow: inherit;
   background-color: #004f52;
   height: 100%;
@@ -47,58 +47,58 @@
   color: white;
   flex-direction: column;
   position: relative;
-  padding-top: 68px;
-`,xt=ut.video`
+  // padding-top: 68px;
+`,Ct=ut.video`
   height: 100%;
   width: 100%;
   object-fit: cover;
-`,Ct=ut.div`
+`,_t=ut.div`
   position: absolute;
   left: 35%;
   top: 20%;
-`,_t=ut.h1`
+`,Pt=ut.h1`
   font-size: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
-`,Pt=ut.h4`
+`,Nt=ut.h4`
   position: absolute;
   top: 47%;
   left: 37%;
   font-size: 1.5em;
-`,Nt=()=>e.createElement(e.Fragment,null,e.createElement(St,null,e.createElement(xt,{autoPlay:!0,loop:!0,muted:!0,src:Et,type:"video/mp4"}),e.createElement(Ct,null,e.createElement(_t,null,"Easy & Efficient Learning"),e.createElement(Pt,null,"SignUp to learn more content"))),e.createElement("h2",null,"About Us"),e.createElement("h2",null,"Stay Tuned for Online Video Tutorials")),Tt=n.p+"2e0efe4335ff93ede139889f977b7cdb.jpg",Lt=ut.img`
+`,Tt=()=>e.createElement(e.Fragment,null,e.createElement(xt,null,e.createElement(Ct,{autoPlay:!0,loop:!0,muted:!0,src:Et,type:"video/mp4"}),e.createElement(_t,null,e.createElement(Pt,null,"Easy & Efficient Learning"),e.createElement(Nt,null,"SignUp to learn more content"))),e.createElement("h2",null,"About Us"),e.createElement("h2",null,"Stay Tuned for Online Video Tutorials"),e.createElement(St,null)),Lt=n.p+"2e0efe4335ff93ede139889f977b7cdb.jpg",zt=ut.img`
   margin-top: 10em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   overflow-y: hidden;
-`,zt=()=>e.createElement(Lt,{src:Tt}),Ot=ut.img`
+`,Ot=()=>e.createElement(zt,{src:Lt}),Rt=ut.img`
   margin-top: 10em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   overflow-y: hidden;
-`,Rt=()=>e.createElement(Ot,{src:Tt}),Mt=ut.img`
+`,Mt=()=>e.createElement(Rt,{src:Lt}),It=ut.img`
   margin-top: 10em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   overflow-y: hidden;
-`,It=()=>e.createElement(Mt,{src:Tt}),Ft=ut.img`
+`,Ft=()=>e.createElement(It,{src:Lt}),Dt=ut.img`
   margin-top: 10em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   overflow-y: hidden;
-`,Dt=()=>e.createElement(Ft,{src:Tt}),At=ut.img`
+`,At=()=>e.createElement(Dt,{src:Lt}),Ut=ut.img`
   margin-top: 10em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   overflow-y: hidden;
-`,Ut=()=>e.createElement(At,{src:Tt}),$t=ut.div`
+`,$t=()=>e.createElement(Ut,{src:Lt}),jt=ut.div`
   overflow: inherit;
   // height: 80%;
   // width: 100%;
-`,jt=()=>{const[t,n]=(0,e.useState)(!1);return(0,e.useEffect)((()=>{window.onscroll=()=>{var e=window.pageYOffset;n(e>0)}}),[]),e.createElement($t,null,e.createElement(kt,{extraClass:t}),e.createElement(v,null,e.createElement(m,{path:"/",element:e.createElement(Nt,null)}),e.createElement(m,{path:"classroom",element:e.createElement(zt,null)}),e.createElement(m,{path:"student",element:e.createElement(Rt,null)}),e.createElement(m,{path:"teacher",element:e.createElement(It,null)}),e.createElement(m,{path:"updates",element:e.createElement(Dt,null)}),e.createElement(m,{path:"auth",element:e.createElement(Ut,null)})),e.createElement(st,null))},Bt=()=>e.createElement(D,null,e.createElement(jt,null));t.render(e.createElement(Bt,null),document.getElementById("slsc"))})()})();
+`,Bt=()=>{const[t,n]=(0,e.useState)(!1);return(0,e.useEffect)((()=>{window.onscroll=()=>{var e=window.pageYOffset;n(e>0)}}),[]),e.createElement(jt,null,e.createElement(kt,{extraClass:t}),e.createElement(v,null,e.createElement(m,{path:"/",element:e.createElement(Tt,null)}),e.createElement(m,{path:"classroom",element:e.createElement(Ot,null)}),e.createElement(m,{path:"student",element:e.createElement(Mt,null)}),e.createElement(m,{path:"teacher",element:e.createElement(Ft,null)}),e.createElement(m,{path:"updates",element:e.createElement(At,null)}),e.createElement(m,{path:"auth",element:e.createElement($t,null)})),e.createElement(st,null))},Vt=()=>e.createElement(D,null,e.createElement(Bt,null));t.render(e.createElement(Vt,null),document.getElementById("slsc"))})()})();
 //# sourceMappingURL=slsc.bundle.js.map
